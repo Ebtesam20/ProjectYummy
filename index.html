@@ -1,0 +1,204 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link  rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <title>Yummy</title>
+
+</head>
+
+<body>
+
+    <section class="loading">
+        <i class=" fas fa-spinner fa-5x fa-spin"></i>
+    </section>
+
+    <section>
+        <div class="stripNav">
+            <div class="stripLogo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <div class="controlNav" id="controlNavbar">
+                <i class="fa fa-align-justify"></i>
+            </div>
+            <div class="stripSocial">
+                <div class="social strip-lang">
+					<span>
+						<i class="fas fa-globe"></i>
+					</span>
+				</div>
+				<div class="social strip-share">
+					<span>
+						<i class="fas fa-share-alt"></i>
+					</span>
+				</div>
+
+            </div>
+        </div>
+
+        <div class="navMenu">
+            <div class="nav-item">
+				<ul>
+					<li class="item1"><a data-list="search" id="searchPage" class="nav-category">Search</a></li>
+					<li class="item2"><a data-list="categories" id="categoryPage" class="nav-category">Categories</a></li>
+					<li class="item3"><a data-list="a" id="areaPage" class="nav-category">Area</a></li>
+					<li class="item4"><a data-list="i" id="ingredientPage" class="nav-category">Ingredients</a></li>
+					<li class="item5"><a data-list="contact" id="contactPage" class="nav-category">Contact Us</a></li>
+
+
+				</ul>
+			</div>
+			<div class="nav-social-item">
+				<a><i class="fab fa-facebook-f"></i></a>
+				<a><i class="fab fa-twitter"></i></a>
+				<a><i class="fas fa-globe"></i></a>
+				<div class="copyright pt-3">
+					<span>Copyright Â© 2019 All Rights Reserved.</span>
+				</div>
+
+			</div>
+        </div>
+    </section>
+
+    <section class="py-5 search" id="searchform">
+		<div id="search-container" class="container scontainer w-75 position-fixed ">
+
+			<div class="row">
+                <div class="col-md-6">
+                    <input id="searchName" class="form-control text-center mb-2 " placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control text-center  " type="text" maxlength="1" id="searchLetter" placeholder="search By First Letter...">
+                </div>
+            </div>
+		</div>
+		<section class="container w-75 text-center">
+
+			<div class="row" id="res">
+
+
+			</div>
+
+
+		</section>
+    </section>
+
+    <section class="py-5" id="default">
+        <div class="subloading-container" style="display: none">
+            <div class="sm-loading position-absolute">
+                <i class="fa fa-spinner fa-spin fa-4x mt-5"></i>
+            </div>
+        </div>
+        <div class="container w-75">
+            <div class="row mt-2 p-2 ps-4" id="mealsData">
+                
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+
+
+ 
+
+    <section id="contact" class="container w-75 py-5 my-5">
+        <div class="p-2">
+            <h2 class="text-light text-center mb-5">ContactUs...</h2>
+            <div class="row px-4">
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+						<input class="form-control shadow " onkeyup="validation()" id="name" placeholder="Enter Your Name">
+						<div class="alert mt-1 alert-danger" id="nameAlert" role="alert">
+                            Enter Valid name(at least 4 characters)
+							special characters and numbers not allowed
+						</div>
+					</div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+						<input onkeyup="validation()" class="form-control" id="email" placeholder="Enter Email">
+						<div class="alert mt-1 alert-danger" id="emailAlert" role="alert">
+							Enter valid email. *Ex: xxx@yyy.com
+						</div>
+					</div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+						<input onkeyup="validation()" class="form-control" id="phone" placeholder="Enter phone">
+						<div class="alert mt-1 alert-danger" id="phoneAlert" role="alert">
+							Enter valid Phone Number
+						</div>
+					</div>
+                </div>
+                <div class="col-md-6 mt-2">
+					<div class="form-group">
+						<input onkeyup="validation()" class="form-control" id="age" placeholder="Enter Age">
+						<div class="alert mt-1 alert-danger" id="ageAlert" role="alert">
+							Enter valid Age
+						</div>
+					</div>
+				</div>
+                <div class="col-md-6 mt-2">
+					<div class="form-group">
+						<input onkeyup="validation()" class="form-control" type="password" id="password" placeholder="Enter Password">
+						<div class="alert mt-1 alert-danger" id="passwordAlert" role="alert">
+							Enter valid password *Minimum eight characters, at least one letter and one number:*
+						</div>
+					</div>
+				</div>
+                <div class="col-md-6 mt-2">
+					<div class="form-group">
+						<input onkeyup="validation()" class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+						<div class="alert mt-1 alert-danger" id="rePasswordAlert" role="alert">
+							Re-enter the password
+						</div>
+					</div>
+				</div>
+
+               
+            </div>
+
+            <div class="sumbitBtn d-flex justify-content-center mt-5">
+                <button type="submit" disabled="false"  id="submitBtn" class="btn btn-outline-danger mx-auto">Submit</button>
+            </div>
+
+        </div>
+    </section>
+ 
+  
+
+
+
+
+    
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

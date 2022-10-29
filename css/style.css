@@ -1,0 +1,274 @@
+*
+{
+	padding:0;
+	margin:0;
+	font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    background-color: #000000f2;
+    overflow: hidden;
+}
+i
+{
+    cursor: pointer;
+}
+li
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6
+{
+    color: white;
+}
+.loading
+{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+    background-color: black;
+    color: white;
+}
+.stripNav
+{
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left:0px;
+    height: 100%;
+    z-index: 55555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+.stripLogo
+{
+    padding:25px 0px;
+}
+.stripLogo img
+{
+    height: 48px;
+}
+.controlNav
+{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.controlNav i
+{
+    font-size: 25px;
+}
+.stripSocial
+{
+    position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 11;
+}
+.stripSocial .social
+{
+    padding-top: 10px;
+}
+.navMenu
+{
+    width: 0px;
+    position: fixed;
+    top:0;
+    height: 100%;
+    background-color: black;
+    z-index: 999999;
+    transition: all 0.6s ease;
+    /* overflow-x: hidden; */
+    opacity: 0;
+}
+.navMenu .nav-item ul
+{
+    height: 300px;
+    overflow: hidden;
+}
+.navMenu .nav-item ul li
+{
+    padding-top: 500px;
+    opacity: 0;
+    /* padding-top: 25px; */
+}
+/* .nav-tab-menu li {
+    padding-top: 500px;
+    opacity: 0;
+} */
+.navMenu .nav-item ul li a
+{
+    color: #f9f6f6 !important;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navMenu .nav-social-item
+{
+    position: absolute;
+    left: 20px;
+    bottom:50px;
+    
+}
+.navMenu .nav-social-item a
+{
+    padding-left: 15px;
+    font-size: 14px;
+}
+.navMenu .copyright
+{
+    color:#999;
+    z-index: 99999;
+}
+.meal-container
+{
+    cursor: pointer;
+    overflow: hidden;
+}
+.post-layer
+{
+    top:100%;
+    left:0;
+    background-color: rgba(255,255,255,0.7);
+    transition: all 1s;
+}
+.meal-container:hover .post-layer
+{
+    top:0;
+}
+#searchform
+{
+    display: none;
+}
+.form-control 
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 600;
+}
+.form-control:focus
+{
+    background-color: transparent !important;
+}
+#search-container
+{
+    left: 12.5%;
+    z-index: 999;
+    top: 0;
+    padding-top: 30px;
+    background-color: #0D0D0D;
+    /* padding-left: 3.8rem!important; */
+}
+.search
+{
+    background-color: #0D0D0D;
+}
+
+::placeholder
+{
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+
+}
+.areaIcon
+{
+    color: #e65a50ab;
+}
+.sm-loading
+{
+    z-index: 9999999999;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+.ingredientsIcon
+{
+    color: #9ee650ab;
+}
+#contact
+{
+    display: none;
+}
+
+#contact input
+{
+	box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+}
+/* #contact
+{
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.source
+{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.youtube
+{
+    background-color: #F70000;
+}
+.tags
+{
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.alert
+{
+    display: none;
+}
+
+#recipes
+{
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+@media (max-width: 580px)
+{
+   .pl
+  {
+    padding-left: 3.8rem!important;
+  }
+
+}
+@media only screen and (max-width: 600px)
+{
+    #search-container
+    {
+        left: 0;
+        width: 100% !important;
+    }
+    .w-75
+    {
+        width : 80% !important;
+    
+    }
+}
